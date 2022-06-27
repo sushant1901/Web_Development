@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+#header {
+  width: 100%;
+  height: 90px;
+  color: aliceblue;
+  background-color: #bd081c;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  line-height: 100px;
+  
+
+}
+.banner {
+    margin-top: 20px;
+  width: 100%;
+  height: 100vh; /* vh= viewport-height */
+  color: aliceblue;
+  /* background-color: aquamarine; */
+  /* hide etra content which is beyound the length of banner*/
+  /* background-image: url(https://images.unsplash.com/photo-1612892483236-52d32a0e0ac1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bWFyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60);
+  background-repeat: no-repeat;
+  background-size: cover; */
+
+  background: #009FFF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  line-height: 100vh;
+}
+#sec-1
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+#sec-1 .circles
+{
+    width: 250px;
+    height: 250px;
+    background-color: burlywood;
+    border-radius: 50%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2
+{
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px gray;
+
+}
+#sec-2 main
+{
+    width: 50%;
+    height:500px ;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+
+}
+#sec-2
+{
+    display: flex;
+    justify-content: space-between;
+     
+}
+
+aside 
+{
+    width: 48%;
+    height: 500px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    color: white;
+    font-size: 24px;
+    
+}
+aside .art
+{
+    width: 100%;
+    height: 160px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sec-3
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    
+}
+#sec-3 .box
+{
+    width: 20%;
+    height: 300px;
+    background-color: red ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 5px 5px 5px  grey; 
+    
+}
+
+footer
+{
+    width: 100%;
+    height: 100px;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+}
+ /* #sec-3 .box:hover
+{
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 5px 5px 5px grey;
+    background-color: #009FFF;
+    transform: scale(1.1);
+}  */
+/* incase of you need hovering effect on boxes. */
+

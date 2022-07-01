@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collect user Data</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .container {
+
+            width: 600px;
+            min-height: 400px;
+            border: 2px solid red;
+            background-color: grey;
+            margin: 50px auto;
+            border-radius: 30px;
+
+
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .labelstyle {
+            margin-left: 30px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 300px;
+            height: 30px;
+            border: 0px;
+            outline: 0px;
+            border-bottom: 1px solid blue;
+            border-radius: 20px;
+            margin-bottom: 20px;
+
+
+        }
+
+        .fa-eye {
+            font-size: 20px;
+            color: blanchedalmond;
+        }
+
+        input[type="Submit"],
+        input[type="Reset"] {
+            margin: 20px 20px;
+            width: 150px;
+            height: 40px;
+            border-radius: 20px;
+            background: rgb(91, 91, 246);
+            color: aliceblue;
+
+
+        }
+
+        #button
+        {
+          width: 100%;  
+          margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Student registration</h2>
+       <form action="./account.html" method="get">  <!-- Post method is also used. it work sonly with server and information is sent behind the url -->
+            <div>
+                <label for="" class="labelstyle ">Enter First Name:</label>
+                <input type="text" placeholder="Enter Your First Name"  name="fname"/>
+            </div>
+
+            <div>
+                <label for="" class="labelstyle">Enter Last Name:</label>
+                <input type="text" placeholder="Enter Your Last Name"  value="lname" />
+            </div>
+
+            <div>
+                <label for="" class="labelstyle">Enter password:</label>
+                <input type="password" placeholder="Enter Your password" name="pwd"  required/>
+                <span style="color: red;">*</span>
+                <!-- required attribute gives feature of compulsory field in form -->
+                <!-- <span class="material-symbols-outlined">
+                visibility
+                </span> -->
+                <i class="fa fa-eye" aria-hidden="true"></i>
+
+                <div>
+                    <label for="" class="labelstyle">Select Gender:</label>
+                    <input type="radio" name="gender" checked value="male" />Male
+                    <input type="radio" name="gender" value="female" />Female
+                </div>
+                <br>
+
+                <div>
+                    <label for="" class="labelstyle">Heightest Qualification</label>
+                    <input type="checkbox" name="qualification" value="10th" />10th
+                    <input type="checkbox" name="qualifiaction" checked value="12th" />12th
+                    <input type="checkbox" name="qualifiaction" value="ug" />UG
+                    <input type="checkbox" name="qualifiaction" value="pg" />PG
+                    <input type="checkbox" name="qualifiaction" value="diploma" />Diploma
+
+                </div>
+                <br>
+                <div>
+
+                    <label for="" class="labelstyle">Select City:</label>
+                    <select name="" id="">
+                        <option disabled selected>Select</option>
+                        <option value="delhi"> Delhi</option>
+                        <option value="mumbai"> Mumbai</option>
+                        <option value="kolkata"> Kolkata</option>
+                        <option value="chennai"> Chennai</option>
+                        <option value="chandigarh"> Chandigarh</option>
+                        <option value="lucknow"> Lucknow</option>
+
+                    </select>
+
+                </div>
+                <br>
+
+                <div>
+                    <label for="" class="labelstyle">Contact:</label>
+                    <input type="number" name="Contact"  required/>
+                    <span style="color: red;">*</span>
+
+                </div>
+                <br>
+                <div>
+                    <label for="" class="labelstyle">Date Of Birth:</label>
+                    <input type="date" name="dob" />
+
+                </div>
+                <br>
+                <div id="button">
+                    <input type="Submit">
+                    <input type="Reset">
+                </div>
+
+
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>
